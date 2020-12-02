@@ -29,12 +29,12 @@ if(isset($_POST['message'])){
     $mail->SMTPSecure = "tls";
     $mail->Port       = 587;
     $mail->Host       = $EMAIL_HOST;
-    $mail->Username   = $EMAIL;
+    $mail->Username   = $EMAIL_SENDER;
     $mail->Password   = $EMAIL_PASSWORD;
 
     $mail->IsHTML(true);
     $mail->AddAddress($ADMIN_EMAIL, $ADMIN_NAME);
-    $mail->SetFrom("imtech2k18@gmail.com", "News Aggregator");
+    $mail->SetFrom($EMAIL_SENDER, "News Aggregator");
     $mail->AddReplyTo($email , $first);
     $mail->Subject = "Contact Form";
     $content = "<p>First Name: $first <br> Last Name: $last <br> Need: $need <br> Message: $message </p>";

@@ -8,7 +8,7 @@
   
   // For mailing
   //Sender email and password
-  $EMAIL = '';
+  $EMAIL_SENDER = '';
   $EMAIL_PASSWORD = '';
   $EMAIL_HOST = 'smtp.gmail.com';
 
