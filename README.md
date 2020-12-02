@@ -54,4 +54,5 @@ Admins can visit all the user pages and additionally they have access to **dashb
 5. If you want to add more RSS Feeds to the project, edit **php/getnews.php** and add source name and urls in **rss_urls**
 6. The project will be ready for use.
 7. Run it on a server and navigate to **views/home.php** to start
+8. Once you login and go to **views/news.php**, it will automatically fetch news from rss feed and store it in one of the created table and will display the same as well.
 
