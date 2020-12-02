@@ -5,7 +5,7 @@
 ## Description
 This is a simple News Aggregator which is built to crawl news from RSS Feeds of **CNN, YAHOO, BBC, INFOWORLD**. This aggregator gets latest news from mentioned sites and show you the title, summary, date and link to the original article.
 
-Apart from the main functionality that is crawling and getting news, it also have a live search feature (can be seen in video linked above). The complete list of features is given below.
+Apart from the main functionality that is crawling and getting news, it also have a live search feature (can be seen in video linked below). The complete list of features is given below.
 
 ## Video Showing All Pages And Functionalities
 **Link**: https://youtu.be/91s_3lOZfVQ 
