@@ -7,7 +7,12 @@
   $DB_PORT = '3306';
   
   // For mailing
+  //Sender email and password
   $EMAIL = '';
   $EMAIL_PASSWORD = '';
   $EMAIL_HOST = 'smtp.gmail.com';
+
+  //Admin name and email (reciever email and name)
+  $ADMIN_EMAIL = '';
+  $ADMIN_NAME = '';	
 ?>

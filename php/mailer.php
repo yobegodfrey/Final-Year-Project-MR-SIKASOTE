@@ -33,7 +33,7 @@ if(isset($_POST['message'])){
     $mail->Password   = $EMAIL_PASSWORD;
 
     $mail->IsHTML(true);
-    $mail->AddAddress("saiteja13427@gmail.com", "Sai Teja");
+    $mail->AddAddress($ADMIN_EMAIL, $ADMIN_NAME);
     $mail->SetFrom("imtech2k18@gmail.com", "News Aggregator");
     $mail->AddReplyTo($email , $first);
     $mail->Subject = "Contact Form";
