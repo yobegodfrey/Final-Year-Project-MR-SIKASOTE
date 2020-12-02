@@ -39,4 +39,18 @@ Users can visit all the visitor pages and also the **news page** where they can 
 ### For Admins
 Admins can visit all the user pages and additionally they have access to **dashboard** and **add users** page, wherein they can add and delete users.
 
+## Instructions (To download and use)
+
+1. Clone the repository `git clone https://github.com/saiteja13427/News-Aggregator.git`
+2. Edit **env.php** and add your db password (for database connection), sender email, sender email password, admin email(reciever email), admin name
+3. The program will automatically create required database and tables.
+4. The program will by default create 1 admin and 1 user account
+    `Admin Credentials:
+        Username: admin
+        Password: admin
+    User Credentials:
+        Username: user
+        Password: user`
+5. If you want to add more RSS Feeds to the project, edit php/getnews.php and add source name and urls in **rss_urls**
+6. The project will be ready for use.
 
