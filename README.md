@@ -43,16 +43,17 @@ Admins can visit all the user pages and additionally they have access to **dashb
 
 1. Clone the repository `git clone https://github.com/saiteja13427/News-Aggregator.git`
 2. Edit **env.php** and add your **db password (for database connection), sender email, sender email password, admin email(reciever email), admin name**.
-3. The program will automatically create required database and tables.
-4. The program will by default create 1 admin and 1 user account
+3. Start a php server using `php -S localhost:8000` and visit http://localhost:8000/views/index.php
+4. The program will automatically create required database and tables.
+5. The program will by default create 1 admin and 1 user account
     `Admin Credentials:
         Username: admin
         Password: admin
     User Credentials:
         Username: user
         Password: user`
-5. If you want to add more RSS Feeds to the project, edit **php/getnews.php** and add source name and urls in **rss_urls**
-6. The project will be ready for use.
-7. Run it on a server and navigate to **views/home.php** to start
-8. Once you login and go to **views/news.php**, it will automatically fetch news from rss feed and store it in one of the created table and will display the same as well.
+6. If you want to add more RSS Feeds to the project, edit **php/getnews.php** and add source name and urls in **rss_urls**
+7. The project will be ready for use.
+8. Run it on a server and navigate to **views/home.php** to start
+9. Once you login and go to **views/news.php**, it will automatically fetch news from rss feed and store it in one of the created table and will display the same as well.
 
