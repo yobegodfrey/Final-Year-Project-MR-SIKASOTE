@@ -22,7 +22,7 @@ function disabled($currect_page){
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- Brand (Logo and brand name) -->
     <img src="../images/favicon.ico" alt="logo">
-    <a class="navbar-brand" href="home.php">News</a>
+    <a class="navbar-brand" href="home.php"><b>News</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -43,7 +43,8 @@ function disabled($currect_page){
         </li>
         <li class="nav-item <?php active('about.php');?>">
             <a class="nav-link" href="about.php">About</a>
-        </li>
+        </li> 
+            <a class="nav-link" href="index.php">Chat</a>
         <?php
             if (isset($_SESSION['admin'])) {
                 echo
@@ -52,7 +53,11 @@ function disabled($currect_page){
                 </li>
                 <li class="nav-item active">
                         <a class="nav-link" href="addUsers.php">Add Users</a>
-                </li>';
+                </li>
+                <li class"nav-item active">
+                <a href="exportData.php" class="btn btn-success"><i class="dwn"></i> Export</a>
+                </li>'
+                ;
             }
         ?>
         </ul>

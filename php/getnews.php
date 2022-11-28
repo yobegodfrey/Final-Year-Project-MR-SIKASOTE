@@ -20,10 +20,17 @@
     
     // URLs to the rss feeds from which we want to get the news
     $rss_urls = array(
-        'CNN' => 'http://rss.cnn.com/rss/edition.rss',
-        'BBC' => 'http://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml',
-        'YAHOO' => 'https://news.yahoo.com/rss/topstories',
-        'INFOWORLD' => 'https://www.infoworld.com/news/index.rss'   
+    'NEWSDIGGERS' => 'https://diggers.news/rss/' ,
+    'TIMES OF ZAMBIA' => 'https://www.times.co.zm/?feed=rss2' ,
+    'DAILY NATION' => 'https://dailynationzambia.com/feed/' ,
+    'MILLENNIUM FM' => 'https://newszambia.co.zm/rss/category/millennium-fm',
+    'MWEBANTU' => 'https://www.mwebantu.com/feed' ,
+    'ZAMBIANEWS365' => 'https://zambianews365.com/feed/' ,
+    'ZAMBIA 24' => 'https://zambia24.com/feed/' ,
+    'ZNBC' => 'https://rss2.feedspot.com/https://www.znbc.co.zm/news/?context=4063169426'
+
+
+        
     );
     
     //Handling the case if there are no urls

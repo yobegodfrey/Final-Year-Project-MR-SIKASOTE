@@ -22,10 +22,10 @@
 
         <!-- About Block -->
         <div class="jumbotron container center_div">
-            <h1>About News Aggregator</h1>
+            <h1>About This Project</h1>
             <hr class="my-4">
-            <p>Built with a the one and only goal to bring <b>high quality news</b> to users at one place, we partner with top media companies to get the best quality news for all our lovely users</p>
-            <p class="lead">We are bringing more updates!! Stay tuned &#128512;</p>
+            <p>This project was built as a data collection tool for different Zambian local languages, which will enable the building of different models or systems</p>
+            <p class="lead"> Built By: <b>GODFREY MKANDAWIRE</b> <br> Supervisor: <b>CLAYTONE SIKASOTE</b></p>
             <a class="btn btn-primary" href="news.php" role="button">Read News</a>
         </div>
         <!-- About Block -->
@@ -37,6 +37,19 @@
         <!-- Footer -->
 
         <script src="../js/bootstrap.js" async defer></script>
+        <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6317dac037898912e967a7a3/1gcait0s2';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 
     </body>
 </html>

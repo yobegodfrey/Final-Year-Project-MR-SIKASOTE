@@ -52,7 +52,7 @@
             </div>
             <div class="form-group">
                 <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="address" required>
+                <input type="text" class="form-control" id="inputAddress" placeholder="UNZA Dept CS" name="address" required>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
@@ -60,11 +60,11 @@
                     <input type="text" class="form-control" id="inputCity" name="city" required>
                 </div>
                 <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
+                    <label for="inputState">Country</label>
                     <input type="text" id="inputState" class="form-control" name="state" required>
                 </div>
                 <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
+                    <label for="inputZip">Phone</label>
                     <input type="text" class="form-control" id="inputZip" name="zip" required>
                 </div>
             </div>
@@ -80,6 +80,19 @@
     ?>
     <!-- Footer -->
     <script src="../js/bootstrap.js" async defer></script>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6317dac037898912e967a7a3/1gcait0s2';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 
 </html>

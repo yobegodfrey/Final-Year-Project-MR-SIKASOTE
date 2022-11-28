@@ -49,7 +49,7 @@
             </div>
             <div class="form-group">
                 <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="address" required="required">
+                <input type="text" class="form-control" id="inputAddress" placeholder="UNZA Dept CS" name="address" required="required">
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
@@ -57,11 +57,11 @@
                     <input type="text" class="form-control" id="inputCity" name="city" required="required">
                 </div>
                 <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
+                    <label for="inputState">Country</label>
                     <input type="text" id="inputState" class="form-control" name="state" required="required">
                 </div>
                 <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
+                    <label for="inputZip">Phone</label>
                     <input type="text" class="form-control" id="inputZip" name="zip" required="required">
                 </div>
             </div>

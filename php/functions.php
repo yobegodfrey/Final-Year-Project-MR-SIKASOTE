@@ -12,13 +12,13 @@ if($conn->connect_error){
 	die("Database connection failed: ".$conn->connect_error );
 }
 //Table creation if table is not there
-$sql = "USE news;";
+$sql = "USE chatbox;";
 $conn->query($sql);
 
 if($conn->errno == "1049"){
-	$sql = "CREATE DATABASE news;";
+	$sql = "CREATE DATABASE chatbox;";
 	$conn->query($sql);
-	$conn->select_db("news");
+	$conn->select_db("chatbox");
 }elseif($conn->errno == "0"){
 	//echo "Database already exists \n";
 }else{
@@ -31,6 +31,7 @@ $sql = 'SELECT username FROM users;';
 
 if($conn->query($sql) == NULL){
 	$sql = "CREATE TABLE `users`(
+			`ID` INT(9) NOT NULL AUTO_INCREMENT,
 			`username` VARCHAR(100) NOT NULL UNIQUE,
             `email` VARCHAR(100) NOT NULL,
 			`password` CHAR(40) NOT NULL,
@@ -38,7 +39,8 @@ if($conn->query($sql) == NULL){
             `city` VARCHAR(255) NOT NULL,
             `state` VARCHAR(100) NOT NULL,
             `zip` VARCHAR(6) NOT NULL,
-            `user_type` VARCHAR(20)
+            `user_type` VARCHAR(20),
+			PRIMARY KEY(ID)
 			);";
 	$conn->query($sql);	
 	//echo "Table created successfully";	
@@ -49,22 +51,42 @@ if($conn->query($sql) == NULL){
 }
 
 //Creating News Table
-$sql = "SELECT title FROM news;";
+$sql = "SELECT title FROM chatbox;";
 
 if($conn->query($sql) == NULL){
-	$sql = "CREATE TABLE `news`(
+	$sql = "CREATE TABLE `chatbox`(
                 `title` VARCHAR(255) NOT NULL,
 				`source` VARCHAR(50) NOT NULL,
                 `link` TINYTEXT UNIQUE,
                 `summary` TINYTEXT,
                 `publishedtime` TIMESTAMP
-            )";   
+            );";   
 	$conn->query($sql);	
 	//echo "Table created successfully";	
 }elseif($conn->errno == "0"){
 	//echo "Table exists already\n";
 }else {
 	die("Table creation failed: ".$conn->error);
+
+	/* --CREATING MESSAGES TABLE-- */
+	$sql = 'SELECT FromUser FROM messages;';
+
+if($conn->query($sql) == NULL){
+	$sql = "CREATE TABLE `messages`(
+			`Id` INT NOT NULL AUTO_INCREMENT,
+			`FromUser` INT(100) NOT NULL,
+            `ToUser` INT(100) NOT NULL,
+			`Message` VARCHAR(1000),
+			
+			PRIMARY KEY(Id)
+			);";
+	$conn->query($sql);	
+	//echo "Table created successfully";	
+}elseif($conn->errno == "0"){
+	//echo "Table exists already\n";
+}else {
+	die("Table creation failed: ".$conn->error);
+}
 }
 /*END OF TABLE CREATION*/
 
@@ -178,7 +200,7 @@ function login(){
 			$_SESSION['user'] = $logged_in_user;
 			$_SESSION['success']  = "You are now logged in";
 
-			header('location: news.php');
+			header('location: home.php');
 		}
 	}else {
 		$message =  "<div class='alert alert-danger' role='alert'>

@@ -23,8 +23,8 @@
         <!-- A Famous news quote and the news button -->
         <div class="text-center">
             <blockquote class="blockquote text-center">
-                <p class="mb-0">All new news is old news happening to new people</p>
-                <footer class="blockquote-footer">Malcolm Muggeridge</footer>
+                <p class="mb-0">WELCOME TO THE TRENDING STORIES AGGRAGATOR</p>
+                <footer class="blockquote-footer">GODFREY MKANDAWIRE</footer>
             </blockquote>
             <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='news.php'">Read News</button>
         </div>
@@ -37,5 +37,6 @@
         <!-- Footer -->
 
         <script src="../js/bootstrap.js" async defer></script>
+       
     </body>
 </html>
